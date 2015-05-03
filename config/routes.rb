@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'board#index'
+  resources :jobs
 
-  get 'board/show'
+  root 'jobs#index'
 
 end
