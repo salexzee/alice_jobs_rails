@@ -1,4 +1,7 @@
-- @jobs.each do |job|
-	%h2= link_to job.title, job, class: 'text-primary'
-	%p.text-success= job.company
-	%hr
+- if @jobs.empty?
+	%h1.text-center Sorry, there are no jobs to view.
+- else
+	- @jobs.each do |job|
+		%h2= link_to job.title, job, class: 'text-primary'
+		%p.text-success= job.company
+		%hr

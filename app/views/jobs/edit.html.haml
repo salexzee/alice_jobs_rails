@@ -3,4 +3,8 @@
 
 	= render 'form'
 
-	= link_to "Back", root_path
+	%hr
+
+	%p The job description supports Kramdown. To learn how to make your description stand out, check out this <a target="_blank" href="http://kramdown.gettalong.org/quickref.html">Kramdown Quick Reference Guide</a>.
+
+	= link_to "Back", job_path(params[:id]), class: "btn btn-small btn-default"
