@@ -4,6 +4,7 @@
 	- @jobs.each do |job|
 		%h2= link_to job.title, job, class: 'text-primary'
 		%p.text-success= job.company
+		%p.text-muted= "Created " + time_ago_in_words(job.created_at) + " ago"
 		%hr
 
 	= will_paginate @jobs, inner_window: 1, outer_window: 0

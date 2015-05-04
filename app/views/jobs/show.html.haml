@@ -1,6 +1,7 @@
 %h1.text-primary= @job.title
 %p.text-success.job-description= markdown @job.description
 %p.text-success.lead= @job.company
+%p.text-muted= "Created " + time_ago_in_words(@job.created_at) + " ago"
 %button.btn.btn-default= link_to "Apply for Job!", @job.url
 
 %hr
