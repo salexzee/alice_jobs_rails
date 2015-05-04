@@ -5,3 +5,5 @@
 		%h2= link_to job.title, job, class: 'text-primary'
 		%p.text-success= job.company
 		%hr
+
+	= will_paginate @jobs, inner_window: 1, outer_window: 0
