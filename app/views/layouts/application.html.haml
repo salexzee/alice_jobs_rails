@@ -8,9 +8,10 @@
 	%body
 		%nav.navbar.navbar-default
 			.container
-				.navbar-brand Alice Jobs
+				.navbar-brand 
+					= link_to "Alice Jobs", root_path
 				%ul.nav.navbar-nav
-					%li= link_to "All Jobs", root_path 
+					%li= link_to "All Jobs", jobs_path 
 					- Category.all.each do |category|
 						%li= link_to category.name, jobs_path(category: category.name)
 				-if user_signed_in?
