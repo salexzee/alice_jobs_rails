@@ -16,6 +16,7 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'kramdown', '~> 1.7.0'
 gem 'will_paginate', '~> 3.0.7'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
+gem 'devise', '~> 3.4.1'
 
 group :development, :test do
   gem 'byebug'
