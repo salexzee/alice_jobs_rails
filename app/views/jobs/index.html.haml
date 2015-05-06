@@ -1,10 +1,11 @@
-- if @jobs.empty?
-	%h1.text-center Sorry, there are no jobs to view.
-- else
-	- @jobs.each do |job|
-		%h2= link_to job.title, job, class: 'text-primary'
-		%p.text-success= job.company
-		%p.text-muted= "Created " + time_ago_in_words(job.created_at) + " ago"
-		%hr
+.container
+	- if @jobs.empty?
+		%h1.text-center Sorry, there are no jobs to view.
+	- else
+		- @jobs.each do |job|
+			%h2= link_to job.title, job, class: 'text-primary'
+			%p.text-success= job.company
+			%p.text-muted= "Created " + time_ago_in_words(job.created_at) + " ago"
+			%hr
 
-	= will_paginate @jobs, inner_window: 1, outer_window: 0
+		= will_paginate @jobs, inner_window: 1, outer_window: 0

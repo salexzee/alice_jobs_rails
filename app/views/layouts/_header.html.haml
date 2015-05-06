@@ -1,0 +1,22 @@
+!!!
+%html
+	%head
+		%title Alice Jobs
+		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+		= javascript_include_tag 'application', 'data-turbolinks-track' => true
+		= csrf_meta_tags
+	%body
+		%nav.navbar.navbar-default
+			.container
+				.navbar-brand 
+					= link_to "Alice Jobs", root_path
+				%ul.nav.navbar-nav
+					%li= link_to "All Jobs", jobs_path 
+					- Category.all.each do |category|
+						%li= link_to category.name, jobs_path(category: category.name)
+				-if user_signed_in?
+					= link_to "Log out", destroy_user_session_path, method: :delete, class: 'navbar-text navbar-right navbar-link'
+					= link_to "New Job", new_job_path, class: 'navbar-text navbar-right navbar-link'
+				-else
+					= link_to "Sign up", new_user_registration_path, class: 'navbar-text navbar-right navbar-link'
+					= link_to "Log in", new_user_session_path, class: 'navbar-text navbar-right navbar-link'

@@ -45,6 +45,10 @@ input {
 	font-weight: 300;
 }
 
+.jumbotron {
+	margin-top: -20px;
+}
+
 .form-horizontal .form-group {
 	margin-right: 0;
 	margin-left: 0;
@@ -52,5 +56,11 @@ input {
 
 .job-description {
 	font-size: 1.2em;
+}
+
+@media (screen and max-width: 767px) {
+	.jumbotron {
+		display: none;
+	}
 }
 
