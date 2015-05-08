@@ -29,6 +29,14 @@ input {
 	font-family: $font-stack;
 }
 
+.notice,
+.alert {
+	float:left;
+	position: fixed;
+	left: 10px;
+	top: 70px;
+}
+
 .navbar {
 	border-radius: 0;
 }
