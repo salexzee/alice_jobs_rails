@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   resources :jobs
 
   root 'pages#index'
+  get 'pages/help'
 
 end
