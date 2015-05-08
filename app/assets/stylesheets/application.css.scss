@@ -60,6 +60,10 @@ input {
 }
 
 @media (screen and max-width: 767px) {
+	ul.nav.navbar-nav li {
+		display: inline-block;
+	}
+
 	.jumbotron {
 		display: none;
 	}
