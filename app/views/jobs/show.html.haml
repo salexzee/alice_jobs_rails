@@ -8,7 +8,7 @@
 	%hr
 
 	#links
-		= link_to "Back", root_path, class: "btn btn-small btn-default"
+		= link_to "Back", :back, class: "btn btn-small btn-default"
 		-if @job.user == current_user
 			= link_to "Edit", edit_job_path(@job), class: "btn btn-small btn-default"
 			= link_to "Delete", job_path(@job), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-small btn-default"
