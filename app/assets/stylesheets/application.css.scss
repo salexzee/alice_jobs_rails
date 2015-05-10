@@ -71,6 +71,14 @@ input {
 	font-size: 1.2em;
 }
 
+.block {
+	margin-top: 15px;
+}
+
+.block h4 {
+	margin-bottom: 2px;
+}
+
 @media (screen and max-width: 767px) {
 	ul.nav.navbar-nav li {
 		display: inline-block;

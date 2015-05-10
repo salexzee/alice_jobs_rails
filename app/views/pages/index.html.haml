@@ -2,7 +2,7 @@
 	.container
 		%h1.text-center Alice Jobs!
 		%h3.text-center.text-muted Connecting real people with real jobs.
-		= link_to "Find Job", jobs_path, class: "btn btn-lg btn-info col-xs-4 col-xs-offset-4"
+		= link_to "Find Job Now!", jobs_path, class: "btn btn-lg btn-info col-xs-4 col-xs-offset-4"
 
 .container
 	%p.lead.text-center Why struggle trying to find great, well paying jobs when you can easily discover them all in one place? 
@@ -11,7 +11,12 @@
 		.row
 			.col-sm-offset-1.col-sm-5.col-xs-10
 				%h4 Why choose us?
-				%p Alice Jobs is a great place to find local jobs in Alice Springs, Australia. We've got something for you whether you're a local resident looking to work full-time for a premier company, or you're traveling through looking to find a place to make some cash for a few months before moving on. We've got everything here in one place. Our goal is to make the process of finding a job as easy and manageable as possible.
+				%p<
+					Alice Jobs is a great place to find local jobs in Alice Springs, Australia. We've got something for you whether you're a local resident looking to work full-time for a premier company, or you're traveling through looking to find a place to make some cash for a few months before moving on. We've got everything here in one place. Our goal is to make the process of finding a job as easy and manageable as possible. 
+					= link_to " Learn more now!", pages_help_path
+					
 			.col-sm-5.col-xs-10
 				%h4 Traveling to Alice?
-				%p For people moving to Alice Springs or traveling for a short period, there are jobs to fit everyone's needs. One of the more difficult parts of going to a new place is finding open jobs. One of our main goals is to make that transition easier by providing a single, consolidated place to post and view available jobs. We provide the first and last stop in the hunt for a new job.
+				%p<
+					For people moving to Alice Springs or traveling for a short period, there are jobs to fit everyone's needs. One of the more difficult parts of going to a new place is finding open jobs. One of our main goals is to make that transition easier by providing a single, consolidated place to post and view available jobs. We provide the first and last stop in the hunt for a new job. 
+					= link_to " Learn more now!", pages_help_path
