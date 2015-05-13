@@ -104,6 +104,10 @@ input {
 	}
 }
 
+.icon:hover {
+	text-decoration: none;
+}
+
 @media (screen and max-width: 767px) {
 	ul.nav.navbar-nav li {
 		display: inline-block;
