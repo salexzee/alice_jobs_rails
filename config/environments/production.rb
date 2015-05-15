@@ -79,4 +79,14 @@ Rails.application.configure do
 
   # Required for Devise
   config.action_mailer.default_url_options = { host: 'alicejobs.herokuapp.com', port: 3000 }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    :address    => "smtp.sendgrid.net",
+    :port       => 25,
+    :user_name  => ENV['SENDGRID_USERNAME'],
+    :password   => ENV['SENDGRID_PASSWORD'],
+    :domain     => ENV['SENDGRID_DOMAIN'],
+    :authentication  => :plain
+}
 end
