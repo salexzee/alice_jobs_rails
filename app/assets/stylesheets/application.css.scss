@@ -104,6 +104,11 @@ input {
 	}
 }
 
+.btn {
+	transition: .5s ease-in-out;
+	text-decoration: none;
+}
+
 .icon:hover {
 	text-decoration: none;
 }
