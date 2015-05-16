@@ -15,3 +15,12 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+	var input = document.getElementById('address');
+	var options = {
+		types: ['address']
+	};
+
+	autocomplete = new google.maps.places.Autocomplete(input, options);
+});
