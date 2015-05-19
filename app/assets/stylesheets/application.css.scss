@@ -52,6 +52,14 @@ input {
 	display: inline-block;
 }
 
+a {
+	transition: .3s ease-in-out;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 .navbar {
 	border-radius: 0;
 }
