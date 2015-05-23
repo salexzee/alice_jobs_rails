@@ -10,6 +10,6 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_out_path_for(resources)
-	jobs_path  	
+    jobs_path  	
   end
 end
