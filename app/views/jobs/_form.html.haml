@@ -1,9 +1,9 @@
 = simple_form_for(@job, html: { class: 'form-horizontal' }) do |f|
 	= f.collection_select :category_id, Category.all, :id, :name, input_html: { class: "dropdown-toggle" }
-	= f.input :title, label: "Job Title", input_html: { class: "form-control" }
-	= f.input :description, label: "Job Description", input_html: { class: "form-control" }
-	= f.input :company, label: "Your Company", input_html: {class: "form-control" }
+	= f.input :title, label: "Job Title", input_html: { class: "form-control" }, placeholder: random_job_title
+	= f.input :description, label: "Job Description", input_html: { class: "form-control", placeholder: "We're looking for someone with the following skills..." }
+	= f.input :company, label: "Your Company", input_html: {class: "form-control", placeholder: "Example Company" }
 	= f.input :address, label: "Location", input_html: { class: "form-control", id: "address" }
-	= f.input :url, label: "Link to Job", input_html: { class: "form-control" }
+	= f.input :url, label: "Link to Job", input_html: { class: "form-control" }, placeholder: "http://example.com/application"
 	%br/
 	= f.button :submit
